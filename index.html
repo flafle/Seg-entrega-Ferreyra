@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Boots!-->
+<link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+<!--Css-->
+<link rel="stylesheet" href="style.css">
+
+
+    <title>Inicio-Mongo</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+        FlaFe
+        <nav class="navbar navbar-expand-lg navbar-light btn-info">
+        
+          <div class="container-fluid">
+           <button   class="navbar-toggler"  type="button" data-mdb-toggle="collapse" 
+              aria-controls="navbarRightAlignExample"       aria-expanded="false"    aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+         
+            <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+              
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">🐸</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio-Mongo</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">Jugar-Mongo</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Personajes</a>
+                  <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">🐒</a>
+                   </li>
+                  </li>
+                </li>
+              </ul>
+             </div>
+          </div>    
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="text-center mt-3">Bienvenid@ al mundo Mongo</h1>
+        <h3 class="text-center mt-5">¡Dejanos tus datos y registrate para iniciar!</h3>
+        
+        <div class="alert alert-dismissible alert-success">
+          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          <br>
+          <strong>Bien, empezamos?
+
+        
+        <div class="container">
+          <h1> Registrate Hoy!</h1>
+         <!--FORMULARIO-->
+          <form id="form" >
+              <!-- NOmbre Completo -->
+              <div class="form-group">
+                  <label for="name">Nombre Completo</label>
+                  <input type="text" id="name" placeholder="Nombre Completo" name="nombre" required minlength="3" maxlength="32">
+              </div>
+              <!-- numero de telefono -->
+              <div class="form-group">
+                  <label for="phone">Número Celular</label>
+                  <input type="tel" id="phone" name="phone" placeholder="555555555" required pattern="[0-9]{9}" maxlength="9">
+              </div>
+              <!-- Email -->
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="usuario@email.com" required>
+              </div>    
+            
+              <!--crear contraseña -->
+              <div class="form-group">
+                  <label for="password1"> Contraseña </label>
+                  <input type="password" id="password1" placeholder="Crea una Contraseña" required name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Porfavor incluya en su contraseña al menos 1 letra mayuscula, 1 minuscula y 1 numero">
+              </div>
+              <!-- Confirmar contraseña-->
+              <div class="form-group">
+                  <label for="password2"> Confirmar Contraseña </label>
+                  <input type="password" id="password2" placeholder="Confirmar  Contraseña" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+              </div>
+              <button type="sumbit">Registrar</button>
+              <!-- Error/exitoso Mensaje-->
+              <div class="message-container">
+                  <h3 id="message">A jugar!</h3>
+              </div>
+          </form>
+        
+    </main>
+
+
+    <!--FOOTER-->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- redes -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+   
+    <div class="me-5 d-none d-lg-block">
+      <span>Mas info:</span>
+    </div>
+    
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    
+  </section>
+  
+
+  <!-- Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      
+      <div class="row mt-3">
+      
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Juego de MOnGo
+          </h6>
+          <p>
+            Una entretenida historia donde podras sumar puntos en cada juego.
+          </p>
+        </div>
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+     
+          <h6 class="text-uppercase fw-bold mb-4">
+           Inicio
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Personajes</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Jugar</a>
+          </p>
+        </div>
+        
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Personajes
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Historia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Habilidades</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Como Jugar</a>
+          </p>
+        </div>
+       
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Contactate !
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Buenos Aires, Argentina</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+        
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+ 
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MongGogame.com</a>
+  </div>
+  
+</footer>
+
+</div>
+</body>
+<script src="./script.js/script.js"></script>
+</html>
